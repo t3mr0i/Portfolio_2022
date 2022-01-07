@@ -1,6 +1,6 @@
 import React from "react";
-
-export class HeaderClass extends React.Component {
+import {OnOff} from "./OnOffSwitch";
+class Header extends React.Component {
 
     render() {
         return (
@@ -8,6 +8,7 @@ export class HeaderClass extends React.Component {
             <div className="header-menu">
               <div className="header-menu-item">
                 <a href="#">Home</a>
+                <OnOff/>
               </div>  
               <div className="header-menu-item">
                 <a href="#">About</a>
@@ -20,3 +21,5 @@ export class HeaderClass extends React.Component {
         );
     }
 }
+
+export default Header;
